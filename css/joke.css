@@ -3,7 +3,7 @@
     padding: 0;
 }
 body {
-    background: skyblue url("../img/bg.png");
+    background: skyblue url("../img/bg.png") 0 0;
 }
 #wrap1 {
     position: absolute;
