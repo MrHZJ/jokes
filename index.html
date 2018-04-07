@@ -4,100 +4,9 @@
 	<meta charset="UTF-8">
 	<title>ajax</title>
 	<style>
-		*{
-			margin: 0;
-			padding: 0;
-		}
-		#wrap1 {
-			position: absolute;
-		}
-		#seaBox {
-			width: 350px;
-			height: 40px;
-			background-color: skyblue;
-			margin: 150px auto 30px;
-			position: relative;
-		}
-		#seaBox input {
-			width: 70%;
-			box-sizing: border-box;
-			position: absolute;
-			left: 0;
-			outline: none;
-			line-height: 39px;
-			padding-left: 10px;
-			border:1px solid skyblue;
-		}
-		#seaBox button {
-			width: 30%;
-			box-sizing: border-box;
-			position: absolute;
-			right: 0;
-			line-height: 38px;
-			border: none;
-			background-color: transparent;
-			outline: none;
-		}
-		#showjoke dl {
-			padding: 15px;
-			min-height: 200px;
-			width: 50%;
-			margin: 0 auto;
-			overflow: hidden;
-			border: 1px dashed #cc2451;
-			border-right: none;
-			border-left: none;
-		}
-		#showjoke dl h3 {
-			text-align: center;
-		}
-		#showjoke dd {
-			width: 50%;
-			margin: 10px auto;
-		}
-		#showjoke dd.time {
-			margin-top: 20px;
-			text-align: right;
-		}
-		.prev,.next {
-			width: 100px;
-			/*height: 50px;*/
-			text-align: center;
-			line-height: 50px;
-			border: 1px solid #794a5d;
-			display: inline-block;
-			cursor: pointer;
-		}
-		#footPage {
-			display: inline-block;
-		}
-		#footPage div {
-			width: 50px;
-			/*height: 50px;*/
-			border: 1px solid #794a5d;
-			line-height: 50px;
-			text-align: center;
-			display: inline-block;
-			cursor: pointer;
-			margin: 0 5px;
-		}
-		.center {
-			width: 845px;
-			margin: 30px auto 50px;
-		}
-		#footPage div.bor_on {
-			border-color: skyblue;
-			border-width: 2px;
-		}
-		.hide {
-			display: none;
-		}
-		#clientpage {
-			text-align: center;
-			line-height: 60px;
-		}
+		
 	</style>
-	<link rel="stylesheet" href="css/clock.css"/>
+	<link rel="stylesheet" href="css/joke.css"/>
 </head>
 <body>
 <!--<a href="img1.rar" download="">下载图片</a>-->
@@ -130,25 +39,6 @@
 	<div class="next" id="next">下一页&gt;</div>
 </div>
 
-<!--时钟-->
-<div id="wrap1">
-	<div id="big_center">
-		<div id="center">
-			<div id="mask"></div>
-			<div id="hour"></div>
-			<div id="minute"></div>
-			<div id="second"></div>
-		</div>
-		<div id="needle_box">
-			<div></div>
-		</div>
-		<div id="num_box">
-			<div>1</div>
-		</div>
-	</div>
-</div>
-<script src="js/clock.js"></script>
-<!--<script src="js/zj_clock.js"></script>-->
 <script>
 	var jokePage = document.getElementById('page');
 	var showjoke = document.getElementById('showjoke');
@@ -295,10 +185,10 @@
 		var adl = showjoke.getElementsByTagName("dl");
 		
 		for(var i = 0;i < adl.length ; i++){
-			adl[i].style.backgroundColor = randomColor(0.3);
+			adl[i].style.backgroundColor = randomColor(0.9);
 		}
 		
-		document.body.style.backgroundColor = randomColor(0.2);
+		document.body.style.backgroundColor = randomColor(0.9);
 	}
 	
 	

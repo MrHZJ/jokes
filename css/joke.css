@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: skyblue url("../img/bg.png");
+}
+#wrap1 {
+    position: absolute;
+}
+#seaBox {
+    width: 350px;
+    height: 40px;
+    background-color: skyblue;
+    margin: 150px auto 30px;
+    position: relative;
+}
+#seaBox input {
+    width: 70%;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    outline: none;
+    line-height: 39px;
+    padding-left: 10px;
+    border:1px solid skyblue;
+}
+#seaBox button {
+    width: 30%;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    line-height: 38px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+#showjoke dl {
+    padding: 15px;
+    min-height: 200px;
+    width: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 1px dashed #cc2451;
+    border-right: none;
+    border-left: none;
+}
+#showjoke dl h3 {
+    text-align: center;
+}
+#showjoke dd {
+    width: 50%;
+    margin: 10px auto;
+}
+#showjoke dd.time {
+    margin-top: 20px;
+    text-align: right;
+}
+.prev,.next {
+    width: 100px;
+    /*height: 50px;*/
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #794a5d;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #fff;
+}
+#footPage {
+    display: inline-block;
+}
+#footPage div {
+    width: 50px;
+    /*height: 50px;*/
+    background: #fff;
+    border: 1px solid #794a5d;
+    line-height: 50px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.center {
+    width: 845px;
+    margin: 30px auto 50px;
+}
+#footPage div.bor_on {
+    border-color: skyblue;
+    border-width: 2px;
+}
+.hide {
+    display: none;
+}
+#clientpage {
+    text-align: center;
+    line-height: 60px;
+}

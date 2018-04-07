@@ -1,6 +1,7 @@
 .vs
-css
-js
+css/clock.css
+js/clock.js
+js/zj_clock.js
 clock.html
 exam.html
 .idea
